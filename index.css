@@ -96,7 +96,7 @@ main{
         font-weight: bold;
         flex-direction: column;
         padding: 20px;
-         transition: 5s all;
+        transition: 5s all;
 }
 
   
@@ -118,7 +118,7 @@ div h3 a{
 #caja2{ 
         height: 350px;
         width: 450px;
-        margin: 10px auto 10px ;
+        margin: 25px auto 10px ;
         overflow: hidden;
         display: block;
         background-color: rgba(255, 255, 255, 0.631);
@@ -129,7 +129,7 @@ div h3 a{
 #caja3{
         height: 350px;
         width: 450px;
-        margin: 10px auto 10px ;
+        margin: 25px auto 10px ;
         overflow: hidden;
         display: block;
         background-color: rgba(255, 255, 255, 0.631);
@@ -141,7 +141,7 @@ div h3 a{
 #caja4{ 
         height: 350px;
         width: 450px;
-        margin: 10px auto 10px ;
+        margin: 25px auto 10px ;
         overflow: hidden;
         display: block;
         background-color: rgba(255, 255, 255, 0.631);
@@ -170,7 +170,7 @@ div h3 a{
         
         
 }
-
+/*xs-sm*/
 @media only screen and (max-width:600px)
 {
 
@@ -203,6 +203,13 @@ nav{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        transform: scale(0.8,0.8);
+}
+#redes{
+        width: 160px;
+        padding-bottom: 15px;
+        margin-right: 0;
+        position: fixed;
+        right: 0;
+        
 }
 }
