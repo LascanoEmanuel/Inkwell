@@ -12,68 +12,39 @@
 }
 
 main{
-    height: 1350px;
-    width: 100%;
+        
     background-image: url(imagenes/COLORPLUMA.jpg);
     background-size: cover;
-    align-items: center;
 }
-
-.ubicacionCarousel {
-    height: 500px;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
+main div{
+    margin-top: 10rem;
 }
-
-   
-.carousel {
+.main{  
     
-    width:600px;
-    height: auto; 
-    
+    height: 1000px;
+    overflow: hidden;
+    color: rgb(0, 0, 0);
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    padding-top: 50px;
 }
-.clientes{
-    display: grid;
-    grid-template-columns: repeat(2, 200px);
-    grid-template-rows:  200px  200px  200px;
-    grid-template-areas: 
-                        "p1 p2 p3"
-                         "p4 p5 p6 ";
-                        
-    row-gap: 50px;
-    column-gap: 100px;
-    margin: 20px;
-    justify-content: center;
+main   div h2{
+ color: black;
 }
-    
-  
+.caja1{
+    margin: 10px 280px 10px ;
+    overflow: hidden;
+    display: block;
+    background-color: rgba(255, 255, 255, 0.631);
+    height: 600px;
+    width: 850px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    color: black;
+    border-radius: 15px;
 
-
-.mate{
-    height: 200px;
-    width: 200px;
-    grid-area: p1;
-    border-radius: 10px;
-}
-.prueba{
-    height: 200px;
-    width: 200px;
-    border-radius: 10px;
-    grid-area: p3;
-}
-
-.tejeda{
-    height:  200px;
-    width:  200pxx;
-    grid-area: p6;
-    border-radius: 10px;
-}
-.rampas{
-    height:  200px;
-    width:  200px;
-    grid-area: p5;
-    border-radius: 10px;
 }
 
 
