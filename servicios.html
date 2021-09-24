@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="servicios.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,90 +15,98 @@
     <title>Inkwell Studio</title>
 </head>
 <style>a{text-decoration: none;}</style>
-<body>
+<body >
     <script>
         AOS.init();
       </script>
+      
 <header>
-    <header>
-        <div class="logo">
-             <a href="index.html">
-                 <img  src="imagenes\logoindexblanco.png" alt="imagenes\logoindexblanco.png">
-            </a>
-            </div>
-    </header>
-<nav>
-    <div id="cajaFlex";>
-            <div id="menu1">
-                <a href="index.html"><p>Home</p> </a>
-            </div>
-            <div id="menu1">
-                <a href="servicios.html"><p>Servicios</p> </a>
-
-            </div>
-            <div id="menu1">
-                <a href="proyectos.html"><p>Proyectos</p> </a>
-            </div>
-            <div id="menu1">
-                <a href="nosotros.html"><p>Nosotros</p></a>
-            </div>
-            <div id="menu1">
-                <a href="contacto.html"><p>Contacto</p> </a>
-            </div>
-        </div> 
-    </nav>
-
-<main class="grilla">
-    <div data-aos="fade-down">
-            <div id="caja1">
-                <h3><a href="servicios.html"> Socialmedia Manager</h3></a>
-                <img src="imagenes/social.jpg" alt="social">
-                <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ut ex necessitatibus, atque magnam minus! Accusamus, doloribus id! Dolor nisi at soluta, odit error veniam itaque eveniet odio ipsum reprehenderit!</p>
-            </div>
-        </div>
-    <div data-aos="fade-down">    
-            <div id="caja2">
-                <h3><a href="servicios.html"> Diseño</h3></a>
-                <img src="imagenes/social.jpg" alt="social">
-                <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ut ex necessitatibus, atque magnam minus! Accusamus, doloribus id! Dolor nisi at soluta, odit error veniam itaque eveniet odio ipsum reprehenderit!</p>
-            </div>
-        </div>
-    <div data-aos="fade-down">
-            <div id="caja3">
-                <h3><a href="servicios.html"> Identidad Digital</h3></a>
-                <img src="imagenes/social.jpg" alt="social">
-                <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ut ex necessitatibus, atque magnam minus! Accusamus, doloribus id! Dolor nisi at soluta, odit error veniam itaque eveniet odio ipsum reprehenderit!</p>
-            </div>
-        </div>
-    <div data-aos="fade-down">
-            <div id="caja4">
-                <h3><a href="servicios.html"> Fotografia</h3>
-                <img src="imagenes/social.jpg" alt="social"></a>
-                <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ut ex necessitatibus, atque magnam minus! Accusamus, doloribus id! Dolor nisi at soluta, odit error veniam itaque eveniet odio ipsum reprehenderit!</p>
-            </div>
+      
+    
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img src="imagenes\logoindexblanco.png" alt=""> </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-left mb-2 mb-lg-0">
+          <li class="nav-item">
+             <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          </li>
+          <li class="nav-item" >
+            <a class="nav-link active" aria-current="page" href="servicios.html">Servicios</a>
+          </li>
+         
+          <a class="nav-link" href="proyectos.html">Proyectos</a>
+          <li class="nav-item">
+            <a class="nav-link" href="nosotros.html">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li> 
+          </li>
+          
+        </ul>
+        
+      </div>
     </div>
- </main>
+  </nav>
+</header>
+<main class="grilla">
+  <div data-aos="fade-down">
+          <div id="caja1">
+              <h3><a href="servicios.html"> Socialmedia Manager</h3></a>
+              <img src="imagenes/social.jpg" alt="social">
+              <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ut ex necessitatibus, atque magnam minus! Accusamus, doloribus id! Dolor nisi at soluta, odit error veniam itaque eveniet odio ipsum reprehenderit!</p>
+          </div>
+      </div>
+  <div data-aos="fade-down">    
+          <div id="caja2">
+              <h3><a href="servicios.html"> Diseño</h3></a>
+              <img src="imagenes/social.jpg" alt="social">
+              <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ut ex necessitatibus, atque magnam minus! Accusamus, doloribus id! Dolor nisi at soluta, odit error veniam itaque eveniet odio ipsum reprehenderit!</p>
+          </div>
+      </div>
+  <div data-aos="fade-down">
+          <div id="caja3">
+              <h3><a href="servicios.html"> Identidad Digital</h3></a>
+              <img src="imagenes/social.jpg" alt="social">
+              <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ut ex necessitatibus, atque magnam minus! Accusamus, doloribus id! Dolor nisi at soluta, odit error veniam itaque eveniet odio ipsum reprehenderit!</p>
+          </div>
+      </div>
+  <div data-aos="fade-down">
+          <div id="caja4">
+              <h3><a href="servicios.html"> Fotografia</h3>
+              <img src="imagenes/social.jpg" alt="social"></a>
+              <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ut ex necessitatibus, atque magnam minus! Accusamus, doloribus id! Dolor nisi at soluta, odit error veniam itaque eveniet odio ipsum reprehenderit!</p>
+          </div>
+  </div>
+</main>
 
 
-
-    </main>
 
 
 
 <footer>
-        <div class="pie">
-        <h4>InkwellStudio</h4>
-            <h5>Cordoba, Argentina 2021</h5>
-            <a style="color: burlywood;" href="contacto.html"><h5>inkwellstudio@inwell.com</h5></a>
-         </div>
-            <div id="redes">
-          
-                <a href=https://www.instagram.com/inkwellstudiok"><img src="imagenes/instagram.png"></a>
-                <a href=""><img src="imagenes/facebook.png">
-                <a href="https://api.whatsapp.com/send?phone=543516231948"><img src="imagenes/whatsapp.png">
-                
-            </div>
-    
+   
+    <div class="pie">
+      <div> 
+        <a href="index.html"><img src="imagenes\logoindexblanco.png" alt=""></a>
+     
+      <h5>Cordoba, Argentina 2021</h5>
+      <a style="color: rgb(255, 255, 255);" href="contacto.html"><h5>inkwellstudio@inwell.com</h5></a>
+    </div>
+        <div id="redes">
+            
+            <a href=https://www.instagram.com/inkwellstudiok"><img src="imagenes/instagram.png"></a>
+            <a href=""><img src="imagenes/facebook.png"></a>
+            <a href="https://api.whatsapp.com/send?phone=543516231948"><img src="imagenes/whatsapp.png">
+            
+        </div>
+</div>
 </footer>
 
 

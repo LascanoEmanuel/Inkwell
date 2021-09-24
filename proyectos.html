@@ -4,72 +4,118 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="proyectos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>Inkwell Studio</title>
 </head>
 <style>a{text-decoration: none;}</style>
-<body>
-    
+<body >
+    <script>
+        AOS.init();
+      </script>
+      
 <header>
-    <div class="logo">
-                 <a href="index.html">
-                     <img  src="imagenes\logoindexblanco.png" alt="imagenes\logoindexblanco.png">
-                </a>
-                </div>
-        </header>
-
-<nav>
-    <div id="cajaFlex";>
-        <div id="menu1">
-            <a href="index.html"><p>Home</p> </a>
-        </div>
-        <div id="menu1">
-            <a href="servicios.html"><p>Servicios</p> </a>
-
-        </div>
-        <div id="menu1">
-            <a href="proyectos.html"><p>Proyectos</p> </a>
-        </div>
-        <div id="menu1">
-            <a href="nosotros.html"><p>Nosotros</p></a>
-        </div>
-        <div id="menu1">
-            <a href="contacto.html"><p>Contacto</p> </a>
-        </div>
-        </div> 
-    </nav>
-
-<main class="main">
+      
     
-    <div class= "caja1"><p>foto1</p></div>
-    <div class= "caja2"><p>foto2</p></div>
-    <div class="caja3" ><p>foto3</p></div>
-    <div class="caja4" ><p>foto4</p></div>
-    <div class="caja6"><p>foto6</p></div>
-    <div class="caja5"><p>foto5</p></div>
-    <div class="caja7" ><p>foto7</p></div>
-    <div class="caja8"><p>foto8</p></div>
-    </main>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img src="imagenes\logoindexblanco.png" alt=""> </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-left mb-2 mb-lg-0">
+          <li class="nav-item">
+             <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="servicios.html">Servicios</a>
+          </li>
+         
+          <a class="nav-link active" aria-current="page" href="proyectos.html">Proyectos</a>
+          <li class="nav-item">
+            <a class="nav-link" href="nosotros.html">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li> 
+          </li>
+          
+        </ul>
+        
+      </div>
+    </div>
+  </nav>
+</header>
+<main>
+<div class="ubicacionCarousel">
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item ">
+        <img src="imagenes\community.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item active">
+        <img src="clientes\EkFYeHAXYAE_DSB.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="clientes\descarga.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+<div class="clientes">
+<img class="mate" src="clientes\mate.jpg" alt="">
+<h1>Marca2</h1>
+<img class="prueba" src="clientes\PRUEBA.jpg" alt="">
+<img class="rampas" src="clientes\rampas.jpg" alt="">
+<img class="tejeda" src="clientes\TEJEDA.jpg" alt="">
+<h1>Marca5</h1>
+
+</div>
+    
+</main>
+
+
 
 
 
 <footer>
-        <div class="pie">
-        <h4>InkwellStudio</h4>
-            <h5>Cordoba, Argentina 2021</h5>
-            <a style="color: burlywood;" href="contacto.html"><h5>inkwellstudio@inwell.com</h5></a>
-         </div>
-            <div id="redes">
-          
-                <a href=https://www.instagram.com/inkwellstudiok"><img src="imagenes/instagram.png"></a>
-                <a href=""><img src="imagenes/facebook.png">
-                <a href="https://api.whatsapp.com/send?phone=543516231948"><img src="imagenes/whatsapp.png">
-                
-            </div>
-    
+   
+    <div class="pie">
+      <div> 
+        <a href="index.html"><img src="imagenes\logoindexblanco.png" alt=""></a>
+      <h5>Cordoba, Argentina 2021</h5>
+      <a style="color: rgb(255, 255, 255);" href="contacto.html"><h5>inkwellstudio@inwell.com</h5></a>
+    </div>
+        <div id="redes">
+            
+            <a href=https://www.instagram.com/inkwellstudiok"><img src="imagenes/instagram.png"></a>
+            <a href=""><img src="imagenes/facebook.png"></a>
+            <a href="https://api.whatsapp.com/send?phone=543516231948"><img src="imagenes/whatsapp.png">
+            
+        </div>
+</div>
 </footer>
 
 
