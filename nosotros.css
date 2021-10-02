@@ -10,7 +10,10 @@
     flex-grow: 0;
     align-items: center;
 }
-
+.navbar-brand:hover{
+    transition: all 0.3s;
+    transform: scale(1.1,1.1);
+}
 main{
         
     background-image: url(imagenes/COLORPLUMA.jpg);
@@ -27,23 +30,24 @@ main div{
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     padding-top: 50px;
+    
 }
 main   div h2{
- color: black;
+ color: burlywood;
 }
 .caja1{
     margin: 10px 280px 10px ;
     overflow: hidden;
-    display: block;
-    background-color: rgba(255, 255, 255, 0.631);
+    background-color: rgb(148 97 65);
     height: 600px;
     width: 850px;
     font-family: 'Poppins', sans-serif;
     text-align: center;
     font-size: large;
     font-weight: bold;
-    color: black;
+    color: rgb(255, 255, 255);
     border-radius: 15px;
+    box-shadow:  -12px 12px 1px rgba(67, 65, 65, 0.618);
 
 }
 
@@ -56,75 +60,124 @@ main   div h2{
     text-align: center;
     background-color:#212529;
     width: 100%;
-    height: 200px;
+    height: 220px;
     font-family: 'Poppins', sans-serif;
-    font-size: x-small;
     color: rgb(255, 255, 255);
     justify-content: space-around;
-    padding-left: 10px;
+    padding-left: 0px;
+    font-size: 1rem;
+   
 }
-#redes{
-    grid-area:"c2";
+footer h5 {
+    font-size:0.9rem;
+    margin-top: 15px;
+}
+
+footer ul.menuFooter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area:c2;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    
+}
+.nav-item{
+    color: rgb(255, 255, 255);
+    
+    list-style: none;
+    
+}
+.nav-link{
+    color: rgb(255, 255, 255);
+}
+.nav-link:hover{
+    color: rgb(206, 185, 185);
+    transition: all 0.3s;
+    transform: scale(1.1,1.1);
+}
+.redes{
+    align-items: center;
+    grid-area:c3;
     width:100%;
     display: flex;
     justify-content: space-between ;
-    padding-left: 25%;
-    padding-right: 25%;
-    
-    
-    
-    
+    padding-left: 20%;
+    padding-right: 20%; 
+}
+.logoHover :hover{
+    transition: all 0.3s;
+    transform: scale(1.05,1.05);
 }
 /*xs-sm*/
 @media only screen and (max-width:600px)
 {
-   
-    .clientes{
+   main{
+       height: 1500px;
+       width: 100%;
+       padding: 20px;
+       box-shadow:  -12px 12px 1px rgba(67, 65, 65, 0.618);
+   }
+  .caja1{
+      width:100%;
+      height: 800px;
+      margin: 0;
+      font-size: small;
+      
+  } 
+    .pie{
         display: grid;
-        grid-template-columns: repeat(2,150px);
-        grid-template-rows: 150px 150px 150px;
-        grid-template-areas: 
-                            "p1 p2"
-                            "p3 p4"
-                            "p5 p6 ";
-        row-gap: 20px;
-        column-gap: 20px;
-        margin: 20px;
-        justify-content: center;
-    }    
-    .mate{
-        height: 150px;
-        width: 150px;
-        grid-area: p1;
-        border-radius: 10px;
+        grid-template-columns: repeat(2,50%);
+        grid-template-rows: repeat(2,50%);
+        grid-template-areas: "c1 c2"
+                            "c3 c3";
+        align-items: center;
+        text-align: center;
+        background-color:#212529;
+        width: 100%;
+        height: 300px;
+        font-family: 'Poppins', sans-serif;
+        color: rgb(255, 255, 255);
+        
+        font-size: 1rem;
+       
     }
-    .prueba{
-        height: 150px;
-        width: 150px;
-        border-radius: 10px;
-        grid-area: p3;
+    footer h5 {
+        font-size:0.6rem;
+        
     }
     
-    .tejeda{
-        height: 150px;
-        width: 150px;
-        grid-area: p6;
-        border-radius: 10px;
+    footer ul.menuFooter{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        grid-area:c2;
+        color: rgb(255, 255, 255);
+        text-align: center;
     }
-    .rampas{
-        height:  150px;
-        width: 150px;
-        grid-area: p5;
-        border-radius: 10px;
-    }   
-
 #redes{
-    width: 160px;
-    padding-bottom: 15px;
+    width: 500px;
+    padding: 15px;
     position: fixed;
     right: 20px;
-    
+    grid-area: c3;
+}
+.logoHover{
+    height:auto;
+    width: 100%;
+}
+.list-style{
+    height:auto;
+    width: 100%;
+}
+li.nav-item{
+    height: 30px;
+    width: 100%;
+}
+.logoHover :hover{
+    transition: all 0.3s;
+    transform: scale(1.05,1.05);
 }
 
-
 }
+
