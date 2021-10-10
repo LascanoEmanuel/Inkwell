@@ -48,11 +48,12 @@ div h3 a{
 
     
 .texto{
-    grid-area: 3  ;
     text-align: center;
-    padding-top: 20px;
+    padding: 20px 10px 10px 10px;
+    margin: 0;
 
 }
+
 
 #caja1{
     height: 400px;
@@ -145,6 +146,9 @@ footer ul.menuFooter{
 /*xs-sm*/
 @media only screen and (max-width:600px)
 {
+    #navbarSupportedContent{
+        margin-left: 30px;
+    }
     #caja1{
         height: 500px;
         width:100%;

@@ -19,7 +19,12 @@ main{
     background-position:center;
     background-size: cover;
 }
-
+.imagen{
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 .main{
     height: 1400px;;
     width: 100%;   
@@ -28,19 +33,13 @@ main{
     font-weight: bold;
     padding-top: 50px;
     display: grid;
-    grid-template-columns: repeat(2,50%);
+    grid-template-columns: repeat(2,49%);
     grid-template-rows:  30%  30%  ;                  
-    row-gap: 50px;
+    row-gap: 20px;
     column-gap: 20px;
     justify-content: center;                   
 }
 
-.imagen{
-    height: 400px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
 
 main div img{
     width: 100%;
@@ -52,15 +51,18 @@ main div img{
     width: 0;
 }
 
-div h3 a{
+div h1 a{
     color: rgb(255, 255, 255);
     font-family: 'Poppins', sans-serif;
+    font-size: xx-large;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-div h3:hover{
+div h1:hover{
     text-decoration: none;
     transition: all 0.3s;
-    transform: scale(1.05,1.05);
+    transform: scale(1.2,1.2);
     color: rgb(255, 255, 255);
 } 
 
@@ -75,7 +77,7 @@ p{
 .caja1{
     padding-top: 20px;
     height:400px;
-    width:95%;
+    width:80%;
     margin: 10px auto 10px ;
     display: grid;
     grid-template-rows: 10% 40% 50%;
@@ -94,11 +96,11 @@ p{
 .caja2{ 
     padding-top: 20px;
     height:400px;
-    width:95%;
+    width:80%;
     margin: 10px auto 10px ;
     display: grid;
     grid-template-rows: 10% 40% 50%;
-    row-gap: 20px;
+    row-gap: 10px;
     overflow: hidden;
     background-color: rgb(148 97 65);
     text-align: center;
@@ -140,6 +142,10 @@ footer ul.menuFooter{
     text-align: center;
     
 }
+.logoHover :hover{
+    transition: all 0.3s;
+    transform: scale(1.05,1.05);
+}
 .nav-item{
     color: rgb(255, 255, 255);
     
@@ -163,13 +169,13 @@ footer ul.menuFooter{
     padding-left: 20%;
     padding-right: 20%; 
 }
-.logoHover :hover{
-    transition: all 0.3s;
-    transform: scale(1.05,1.05);
-}
+
 /*xs-sm*/
 @media only screen and (max-width:600px)
 {
+    #navbarSupportedContent{
+        margin-left: 30px;
+    }
     .imagen{
         height: 0;
         width: 0;
@@ -177,24 +183,17 @@ footer ul.menuFooter{
     
       
     .main{
-        height:90%;
+        height: 100%;
         width: auto;
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: 20% 20% 20% 20% 20%;
-        grid-template-areas: "c1"
-                            "a1"
-                            "a2"
-                            "a3"
-                            "a4";
+        row-gap: 50px;
         color: rgb(0, 0, 0);
         font-family: 'Poppins', sans-serif;
-       
-        
         padding: 0;
-        
-        
     }
+    
     .ubicacionCarousel {
         grid-area: c1;
         height: 100%;
@@ -263,7 +262,7 @@ li.nav-item{
     height: 30px;
     width: 100%;
 }
-logoHover :hover{
+.logoHover :hover{
     transition: all 0.3s;
     transform: scale(1.05,1.05);
 }

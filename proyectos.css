@@ -140,6 +140,9 @@ footer ul.menuFooter{
 /*xs-sm*/
 @media only screen and (max-width:600px)
 {
+    #navbarSupportedContent{
+        margin-left: 30px;
+    }
     .ubicacionCarousel {
         height: 250px;
         padding: 20px;
