@@ -1,0 +1,466 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-collapse {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar-brand:hover {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+
+.ubicacionCarousel {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: c1;
+  width: 100%;
+  height: auto;
+}
+
+main {
+  background-position: center;
+  background-size: cover;
+  height: 100px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+}
+
+.datos {
+  height: 80%;
+  text-align: start;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  text-align: start;
+}
+
+.main {
+  padding: 10%;
+  height: 1000px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 500px 500px;
+      grid-template-columns: 500px 500px;
+  -ms-grid-rows: 50% 50%;
+      grid-template-rows: 50% 50%;
+      grid-template-areas: "zona1 zona2" "zona3 zona2";
+  -webkit-column-gap: 40px;
+          column-gap: 40px;
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.logocontacto {
+  height: 300px;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-area: "zona1";
+  margin: auto;
+  background-color: #00000090;
+  color: white;
+}
+
+.mapa {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  grid-area: "zona3";
+  padding: 5%;
+  margin-left: 5%;
+  height: 350px;
+  width: 450px;
+  background-color: #00000090;
+}
+
+.div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  background-color: #00000090;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: zona2;
+  font-family: 'Poppins', sans-serif;
+  padding-top: 40px;
+  color: white;
+}
+
+fieldset {
+  height: 100%;
+  width: 800px;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+.cajatexto {
+  margin: 0px 35px 35px 35px;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#text {
+  width: 60%;
+}
+
+.botones input {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: 4S0px;
+  width: 80px;
+  border-radius: 15px;
+}
+
+footer .pie {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (33%)[3];
+      grid-template-columns: repeat(3, 33%);
+      grid-template-areas: "c1 c2 c3";
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background-color: #212529;
+  width: 100%;
+  height: 220px;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-left: 0px;
+  font-size: 1rem;
+}
+
+footer footer h5 {
+  font-size: 0.9rem;
+  margin-top: 15px;
+}
+
+footer footer ul.menuFooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: c2;
+  color: white;
+  text-align: center;
+}
+
+footer .nav-item {
+  color: white;
+  list-style: none;
+}
+
+footer .nav-link {
+  color: white;
+}
+
+footer .nav-link:hover {
+  color: #ceb9b9;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+footer .redes {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: c3;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+footer .logoHover :hover {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-transform: scale(1.05, 1.05);
+          transform: scale(1.05, 1.05);
+}
+
+/*xs-sm*/
+@media only screen and (max-width: 600px) {
+  #navbarSupportedContent {
+    margin-left: 30px;
+  }
+  .main {
+    padding: 5%;
+    height: 1500px;
+    width: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .datos {
+    text-align: start;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    text-align: start;
+  }
+  .div {
+    height: 100%;
+    width: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    background-color: #00000090;
+    padding: auto;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 20px;
+    color: white;
+  }
+  .div fieldset
+form {
+    padding: 0;
+  }
+  .div .cajatexto {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  .div li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .logocontacto {
+    height: 85%;
+    width: auto;
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 15px 0 0 0;
+    background-color: #00000090;
+    color: white;
+  }
+  .mapa {
+    height: 350px;
+    width: 100%;
+    margin: 15px 0 0 0;
+  }
+  .data {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    justify-items: center;
+    row-gap: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  footer .pie {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (50%)[2];
+        grid-template-columns: repeat(2, 50%);
+        grid-template-areas: "c1 c2" "c3 c3";
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    background-color: #212529;
+    width: 100%;
+    height: 300px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 1rem;
+  }
+  footer h5 {
+    font-size: 0.6rem;
+  }
+  footer ul.menuFooter {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: c2;
+    color: white;
+    text-align: center;
+    margin-bottom: 0;
+  }
+  footer a img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  footer #redes {
+    width: 500px;
+    padding: 15px;
+    position: fixed;
+    right: 20px;
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: c3;
+  }
+  footer .logopie {
+    width: 180px;
+    height: auto;
+  }
+  footer .logoHover {
+    height: auto;
+  }
+  footer .list-style {
+    height: auto;
+    width: 100%;
+  }
+  footer li.nav-item {
+    height: 30px;
+    width: 100%;
+  }
+  footer .logoHover :hover {
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  #navbarSupportedContent {
+    margin-left: 30px;
+  }
+  .main {
+    height: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (50%)[2];
+        grid-template-columns: repeat(2, 50%);
+    -ms-grid-rows: 70% 30%;
+        grid-template-rows: 70% 30%;
+        grid-template-areas: "area1 area1" "area2 area3";
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-column-gap: 20px;
+            column-gap: 20px;
+    row-gap: 50px;
+  }
+  .data {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    justify-items: center;
+    row-gap: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .logocontacto {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: area3;
+    margin: 0;
+  }
+  .mapa {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: area2;
+    height: 300px;
+    width: 100%;
+    margin: 0;
+    padding: 3%;
+  }
+  iframe {
+    margin: auto;
+    height: 85%;
+    width: 85%;
+  }
+  .div {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: area1;
+    height: 100%;
+  }
+  .data {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 20px;
+  }
+}
+/*# sourceMappingURL=contacto.css.map */

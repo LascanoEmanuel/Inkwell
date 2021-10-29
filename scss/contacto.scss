@@ -1,0 +1,402 @@
+$colorLetras:white;
+$fondo:#00000090;
+$colorLetras:white;
+$colorHover:#ddcca6;
+
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+.navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 0;
+    align-items: center;
+}
+
+.navbar-brand:hover{
+    transition: all 0.3s;
+    transform: scale(1.1,1.1);
+}
+.ubicacionCarousel {
+    grid-area: c1;
+    width: 100%;
+    height: auto;
+}
+main{
+    background-position:center;
+    background-size: cover;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    list-style-type: none;
+}
+
+
+.datos{
+    height: 80%;
+    text-align: start;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    text-align: start;
+}
+
+
+    .main{
+            padding: 10%;
+            height: 1000px;
+            display: grid;
+            grid-template-columns: 500px 500px;
+            grid-template-rows: 50% 50%;
+            grid-template-areas: "zona1 zona2"
+                                "zona3 zona2";
+            column-gap: 40px;
+            overflow: hidden;
+            font-family: 'Poppins', sans-serif;
+            font-weight: bold;
+            align-content: center;
+           
+
+}
+.logocontacto{
+    height: 300px;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-area: "zona1";
+    margin: auto;
+    background-color:$fondo ;
+    
+    color:$colorLetras;
+    
+}
+.mapa {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    grid-area: "zona3";
+    padding: 5%;
+    margin-left: 5%;
+    height: 350px;
+    width: 450px;
+    background-color:$fondo  ;
+
+}
+
+
+.div{
+    display: flex;
+    align-content: center;
+            background-color: $fondo;
+            grid-area: zona2;
+            font-family: 'Poppins', sans-serif;
+            padding-top: 40px;
+            color: $colorLetras;
+           
+           
+}
+fieldset{
+            height: 100%;
+            width: 800px;
+            text-align: center;
+            
+                 
+}
+
+    h2{
+            text-align: center;
+           
+}
+    .cajatexto{
+            margin: 0px 35px 35px 35px;
+            text-align: center;
+            align-items: center;
+}
+#text{
+    width: 60%;
+}
+    .botones input{
+            align-content: center;
+            height: 4S0px;
+            width: 80px;
+            border-radius: 15px;
+}
+footer{
+    .pie{
+        display: grid;
+        grid-template-columns: repeat(3,33%);
+        grid-template-areas: "c1 c2 c3";
+        align-items: center;
+        text-align: center;
+        background-color:#212529;
+        width: 100%;
+        height: 220px;
+        font-family: 'Poppins', sans-serif;
+        color: rgb(255, 255, 255);
+        justify-content: space-around;
+        padding-left: 0px;
+        font-size: 1rem;
+       
+    }
+    footer h5 {
+        font-size:0.9rem;
+        margin-top: 15px;
+    }
+    
+    footer ul.menuFooter{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        grid-area:c2;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        
+    }
+    .nav-item{
+        color: rgb(255, 255, 255);
+        
+        list-style: none;
+        
+    }
+    .nav-link{
+        color: rgb(255, 255, 255);
+    }
+    .nav-link:hover{
+        color: rgb(206, 185, 185);
+        transition: all 0.3s;
+        
+    }
+    .redes{
+        align-items: center;
+        grid-area:c3;
+        width:100%;
+        display: flex;
+        justify-content: space-between ;
+        padding-left: 20%;
+        padding-right: 20%; 
+    }
+    .logoHover :hover{
+        transition: all 0.3s;
+        transform: scale(1.05,1.05);
+    }
+}
+/*xs-sm*/
+@media only screen and (max-width:600px)
+{
+#navbarSupportedContent{
+    margin-left: 30px;
+    
+}
+
+    .main {
+        padding: 5%;
+        height: 1500px;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+      
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+        align-content: center; }
+     .datos{
+            
+            text-align: start;
+            margin-bottom: 10px;
+            margin-left: 20px;
+            text-align: start;   
+        }
+    .div {
+        height: 100%;
+        width: auto;
+        display: flex;
+        align-content: center;
+        background-color: $fondo;
+        padding: auto;
+        font-family: 'Poppins', sans-serif;
+        
+        padding-top: 20px;
+        color: $colorLetras;
+        
+ fieldset 
+            form{
+            padding: 0;
+        }
+    .cajatexto{
+        margin: 0;
+        margin-bottom: 20px;
+    }
+        li{
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    }
+    .logocontacto {
+            height: 85%;
+            width: auto;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            margin: 15px 0 0 0;
+            background-color: $fondo;
+            
+            color: $colorLetras;
+    }     
+    .mapa {
+    height: 350px;
+    width: 100%;
+    margin: 15px 0 0 0;
+    
+              
+    }
+    .data{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-items: center;
+        row-gap: 10px;
+        
+        margin-left: 20px;
+        margin-right: 20px;
+       
+        
+    }
+              
+    footer{
+        .pie{
+            display: grid;
+            grid-template-columns: repeat(2,50%);           
+            grid-template-areas: "c1 c2"
+                                "c3 c3";
+            align-items: center;
+            text-align: center;
+            background-color:#212529;
+            width: 100%;
+            height: 300px;
+            font-family: 'Poppins', sans-serif;
+            color: $colorLetras;
+            
+            font-size: 1rem;
+           
+        }
+        h5 {
+            font-size:0.6rem;
+            
+        }
+       
+         ul.menuFooter{
+            
+            align-items: center;
+            justify-content: center;
+            grid-area:c2;
+            color: $colorLetras;
+            text-align: center;
+            margin-bottom: 0;
+        }
+     a img{
+         width: 100%;
+         height: auto;
+         margin-bottom: 10px;
+     }   
+    #redes{
+        width: 500px;
+        padding: 15px;
+        position: fixed;
+        right: 20px;
+        grid-area: c3;
+
+    }
+    .logopie{
+        width: 180px;
+        height: auto;
+    }
+    .logoHover{
+        height:auto;
+        
+    }
+    .list-style{
+        height:auto;
+        width: 100%;
+    }
+    li.nav-item{
+        height: 30px;
+        width: 100%;
+    }
+    .logoHover :hover{
+        transition: all 0.3s;
+        transform: none;
+    }
+    }
+
+}
+@media (min-width: 601px) and (max-width: 1024px)
+{
+    #navbarSupportedContent{
+        margin-left: 30px;
+        
+    }
+   .main{
+       height: 100%;
+       
+       display: grid;
+       grid-template-columns: repeat(2,50%);
+       grid-template-rows: 70% 30%;
+       
+       grid-template-areas: "area1 area1"
+       "area2 area3";
+       align-content: center;
+       column-gap: 20px;
+       row-gap: 50px;
+   }
+   .data{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-items: center;
+    row-gap: 10px;
+    
+    margin-left: 20px;
+    margin-right: 20px;
+   
+    
+}
+
+   .logocontacto{
+    grid-area: area3;
+    margin: 0;
+}
+.mapa {
+    grid-area: area2;
+    height: 300px;
+    width: 100%;
+    margin: 0;
+    padding: 3%;
+}
+iframe{
+   margin: auto;
+    height: 85%;
+    width: 85%;
+}
+
+.div{
+    grid-area: area1;
+    height: 100%;
+           
+}
+.data{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    
+}
+
+}
