@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="contacto.css">
+    <link rel="stylesheet" href="css\contacto.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <title>Inkwell Studio</title>
+    <title>Inkwell Studio - Contacto</title>
 </head>
 <style>a{text-decoration: none;}</style>
 <body >
@@ -21,59 +21,52 @@
       </script>
       
 <header>
-      
-    
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.html"><img src="imagenes\logoindexblanco.png" alt=""> </a>
+      <a class="navbar-brand" href="index.html"><img src="imagenes\logoindexblanco.png" alt=""></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-left mb-2 mb-lg-0">
+        <ul class="navbar-nav me-center mb-2 mb-lg-0">
           <li class="nav-item">
-             <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="servicios.html">Servicios</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="proyectos.html">Proyectos</a>
-          </li>
-          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="index.html">Home</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="servicios.html">Servicios</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="proyectos.html">Proyectos</a>
+           </li>
+           <li class="nav-item">
             <a class="nav-link" href="nosotros.html">Nosotros</a>
           </li>
-          <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
-          
-           
-          </li> 
-          </li>
-          
-        </ul>
-        
+           <li class="nav-item">
+             <a class="nav-link active" href="contacto.html">Contacto</a>
+           </li>     
+        </ul>   
       </div>
     </div>
   </nav>
 </header>
-<main class="main">
+<main class="main" style="background-image: url(imagenes/OSCURAPLUMA.jpg);">
   <div class="div">
       <fieldset><h2 class="contacto">Contactanos</h2> 
       <form action="" method="POST">
-       <ul  style="list-style-type: none;" >
-           <li class="nombre">
+        <div class="data">
+       <ul style="list-style-type: none; padding: 0;" >
+           <li class="datos">
               <label for="name">Nombre:</label>
               <input type="text" id="name">
           </li>
 
-          <li class="apellido">
-              <label for="name">Apellido</label>
+          <li class="datos">
+              <label for="name">Apellido:</label>
               <input type="text" id="surname">
           </li>
 
-          <li class="email">
-              <label for="email">E-mail</label>
+          <li class="datos">
+              <label for="email">E - mail :</label>
               <input type="mail" id="mail">
           </li>
 
@@ -85,10 +78,12 @@
                  <option value="3">No binario</option>
                  
              </select>
-          </li></ul>
+          </li>
+        </ul>
+        </div>
       <div class="cajatexto">
               <h4>Mensaje</h4>
-              <textarea name="consultas" id="text" cols="auto" rows="10"></textarea>
+              <textarea name="consultas" id="text" cols="30" rows="10"></textarea>
               <br>
               <label for="checkbox">Deseo recibir noticias</label> <input type="checkbox">
               <br>
@@ -101,54 +96,53 @@
      </form>
   </div> 
 </fieldset>
-  
-      
+
   </div>
-  
-     
+  <div class="logocontacto">
+    <a   href="index.html"><img src="imagenes\logoindexblanco.png" alt="logoinkwell"> </a>
+    <h5>Cordoba, Argentina 2021</h5>
+      <a class="logoHover" style="color: rgb(255, 255, 255);" href="contacto.html"><h5>inkwellstudio@inwell.com</h5></a>
+  </div>
+     <div class="mapa">
+      <iframe  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4957.536148173064!2d-64.18164248960993!3d-31.394494966258293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1634761128860!5m2!1ses-419!2sar" width="400" height="300" style="border: 20px;" allowfullscreen="" loading="lazy"></iframe>
+     </div>
   </main>
 
 
+  <footer style="list-style: none;">
 
-  <footer>
-   
     <div class="pie">
-      <div> 
-       
-        <a  href="index.html"><img class="logoHover" src="imagenes\logoindexblanco.png" alt=""></a>
-    
-      <h5>Cordoba, Argentina 2021</h5>
-      <a class="logoHover" style="color: rgb(255, 255, 255);" href="contacto.html"><h5>inkwellstudio@inwell.com</h5></a>
+           <div class="name"> 
+              <a class="logoHover"  href="index.html"><img src="imagenes\logoindexblanco.png" alt="logoinkwell"> </a>
+              <h5>Cordoba, Argentina 2021</h5>
+              <a class="logoHover" style="color: rgb(255, 255, 255);" href="contacto.html"><h5>inkwellstudio@inwell.com</h5></a>
     </div>
-    <div  >
-      <ul style="list-style: none; padding-left: 0; color: white;" ></ul>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-         </li>
-         <li class="nav-item">
-           <a class="nav-link" href="servicios.html">Servicios</a>
-         </li>
-         <li class="nav-item">
-           <a class="nav-link" href="proyectos.html">Proyectos</a>
-         </li>
-         <li class="nav-item">
-          <a class="nav-link" href="nosotros.html">Nosotros</a>
-        </li>
-         <li class="nav-item">
-           <a class="nav-link" href="contacto.html">Contacto</a>
-         </li>
-         
-       </li> 
-       </li>
-      </ul>
+             <div style="padding-bottom: 0;">
+                <ul class="menuFooter" style="list-style: none; padding-left: 0; color: white;" >
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="servicios.html">Servicios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="proyectos.html">Proyectos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="nosotros.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+                <div class="redes">
+                    <a  class="logoHover" href=https://www.instagram.com/inkwellstudiok"><img src="imagenes/instagram.png"></a>
+                    <a  class="logoHover"  href=""><img src="imagenes/facebook.png"></a>
+                    <a  class="logoHover" href="https://api.whatsapp.com/send?phone=543516231948"><img src="imagenes/whatsapp.png"></a>
+                </div>
     </div>
-        <div class="redes">
-            <a  class="logoHover" href=https://www.instagram.com/inkwellstudiok"><img src="imagenes/instagram.png"></a>
-            <a  class="logoHover"  href=""><img src="imagenes/facebook.png"></a>
-            <a  class="logoHover" href="https://api.whatsapp.com/send?phone=543516231948"><img src="imagenes/whatsapp.png">
-</div>
- </div>
-</footer>
+  </footer>
 
 
 
