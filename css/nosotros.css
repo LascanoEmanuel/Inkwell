@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.navbar-collapse {
+  flex-basis: 100%;
+  flex-grow: 0;
+  align-items: center; }
+
+.navbar-brand:hover {
+  transition: all 0.3s;
+  transform: scale(1.1, 1.1); }
+
+.ubicacionCarousel {
+  grid-area: c1;
+  width: 100%;
+  height: auto; }
+
+main {
+  background-position: center;
+  background-size: cover;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  list-style-type: none; }
+
+.main {
+  padding: 10%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 500px 500px;
+  column-gap: 20px;
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  align-content: center;
+  justify-content: center; }
+
+.div {
+  align-content: center;
+  background-color: #00000090;
+  width: 100%;
+  overflow: unset;
+  font-family: 'Poppins', sans-serif;
+  padding-top: 40px;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-size: small; }
+
+footer .pie {
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  grid-template-areas: "c1 c2 c3";
+  align-items: center;
+  text-align: center;
+  background-color: #212529;
+  width: 100%;
+  height: 220px;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  justify-content: space-around;
+  padding-left: 0px;
+  font-size: 1rem; }
+
+footer footer h5 {
+  font-size: 0.9rem;
+  margin-top: 15px; }
+
+footer footer ul.menuFooter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: c2;
+  color: white;
+  text-align: center; }
+
+footer .nav-item {
+  color: white;
+  list-style: none; }
+
+footer .nav-link {
+  color: white; }
+
+footer .nav-link:hover {
+  color: #ceb9b9;
+  transition: all 0.3s; }
+
+footer .redes {
+  align-items: center;
+  grid-area: c3;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20%;
+  padding-right: 20%; }
+
+footer .logoHover :hover {
+  transition: all 0.3s;
+  transform: scale(1.05, 1.05); }
+
+/*xs-sm*/
+@media only screen and (max-width: 600px) {
+  #navbarSupportedContent {
+    margin-left: 30px; }
+  .main {
+    padding: 5%;
+    height: 1150px;
+    width: auto;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 100%;
+    overflow: hidden;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    align-content: center; }
+  .div {
+    width: auto;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    background-color: #00000090;
+    font-family: 'Poppins', sans-serif;
+    font-size: x-small;
+    overflow: unset;
+    font-weight: normal;
+    padding-top: 20px;
+    color: white; }
+  footer .pie {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-areas: "c1 c2" "c3 c3";
+    align-items: center;
+    text-align: center;
+    background-color: #212529;
+    width: 100%;
+    height: 300px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 1rem; }
+  footer h5 {
+    font-size: 0.6rem; }
+  footer ul.menuFooter {
+    align-items: center;
+    justify-content: center;
+    grid-area: c2;
+    color: white;
+    text-align: center;
+    margin-bottom: 0; }
+  footer a img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px; }
+  footer #redes {
+    width: 500px;
+    padding: 15px;
+    position: fixed;
+    right: 20px;
+    grid-area: c3; }
+  footer .logopie {
+    width: 180px;
+    height: auto; }
+  footer .logoHover {
+    height: auto; }
+  footer .list-style {
+    height: auto;
+    width: 100%; }
+  footer li.nav-item {
+    height: 30px;
+    width: 100%; }
+  footer .logoHover :hover {
+    transition: all 0.3s;
+    transform: none; } }
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  #navbarSupportedContent {
+    padding-left: 30px; }
+  .main {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    align-content: center;
+    column-gap: 20px;
+    row-gap: 50px; }
+  .logocontacto {
+    grid-area: area3;
+    margin: 0; }
+  iframe {
+    margin: auto;
+    height: 85%;
+    width: 85%; }
+  .div {
+    display: flex;
+    flex-direction: column;
+    height: 80%; } }

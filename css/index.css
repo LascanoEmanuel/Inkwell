@@ -1,0 +1,228 @@
+/*variables*/
+* {
+  margin: 0;
+  padding: 0; }
+
+.navbar-collapse {
+  flex-basis: 100%;
+  flex-grow: 0;
+  align-items: center; }
+
+.navbar-brand:hover {
+  transition: all 0.3s;
+  transform: scale(1.1, 1.1); }
+
+.ubicacionCarousel {
+  grid-area: c1;
+  width: 100%;
+  height: auto; }
+
+main p {
+  color: white; }
+
+main .contenido {
+  background-image: url(imagenes/OSCURAPLUMA.jpg);
+  background-position: center;
+  background-size: 100%;
+  height: auto;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  font-weight: normal;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white; }
+
+main div a h1 {
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: xx-large;
+  text-align: center;
+  margin-bottom: 0; }
+
+main div h1:hover {
+  text-decoration: none;
+  transition: all 0.3s;
+  transform: scale(1.2, 1.2);
+  color: white; }
+
+main p {
+  margin: 10px;
+  font-size: 15px;
+  color: white; }
+
+main .caja {
+  padding-top: 50px;
+  color: white !important;
+  height: 400px;
+  width: 80%;
+  margin: 0px auto 30px;
+  display: grid;
+  row-gap: 10px;
+  background-color: #00000090;
+  overflow: hidden;
+  text-align: center;
+  text-size-adjust: auto; }
+
+footer .pie {
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  grid-template-areas: "c1 c2 c3";
+  align-items: center;
+  text-align: center;
+  background-color: #212529;
+  width: 100%;
+  height: 220px;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  justify-content: space-around;
+  padding-left: 0px;
+  font-size: 1rem; }
+
+footer footer h5 {
+  font-size: 0.9rem;
+  margin-top: 15px; }
+
+footer footer ul.menuFooter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: c2;
+  color: white;
+  text-align: center; }
+
+footer .nav-item {
+  color: white;
+  list-style: none; }
+
+footer .nav-link {
+  color: white; }
+
+footer .nav-link:hover {
+  color: #ceb9b9;
+  transition: all 0.3s; }
+
+footer .redes {
+  align-items: center;
+  grid-area: c3;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20%;
+  padding-right: 20%; }
+
+footer .logoHover :hover {
+  transition: all 0.3s;
+  transform: scale(1.05, 1.05); }
+
+/*xs-sm*/
+@media only screen and (max-width: 600px) {
+  nav #navbarSupportedContent {
+    margin-left: 30px; }
+  main .caja {
+    height: 100%;
+    width: 80%;
+    padding: 10px 5% 10px 5%;
+    margin: 0px auto 30px; }
+    main .caja .ubicacionCarousel {
+      grid-area: c1;
+      height: 150px;
+      width: 100%; }
+    main .caja .carousel-inner {
+      width: 100%;
+      height: 100%; }
+    main .caja .carousel {
+      width: 100%;
+      height: 100%; }
+    main .caja .caja {
+      height: 400px; }
+    main .caja p {
+      margin: 10px;
+      display: flex;
+      font-size: small;
+      align-items: center; }
+    main .caja div h1 a {
+      font-size: initial; }
+  footer .pie {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-areas: "c1 c2" "c3 c3";
+    align-items: center;
+    text-align: center;
+    background-color: #212529;
+    width: 100%;
+    height: 300px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 1rem; }
+  footer h5 {
+    font-size: 0.6rem; }
+  footer ul.menuFooter {
+    align-items: center;
+    justify-content: center;
+    grid-area: c2;
+    color: white;
+    text-align: center;
+    margin-bottom: 0; }
+  footer a img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px; }
+  footer #redes {
+    width: 500px;
+    padding: 15px;
+    position: fixed;
+    right: 20px;
+    grid-area: c3; }
+  footer .logopie {
+    width: 180px;
+    height: auto; }
+  footer .logoHover {
+    height: auto; }
+  footer .list-style {
+    height: auto;
+    width: 100%; }
+  footer li.nav-item {
+    height: 30px;
+    width: 100%; }
+  footer .logoHover :hover {
+    transition: all 0.3s;
+    transform: none; } }
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .main {
+    height: 1400px;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: auto;
+    column-gap: 10px;
+    padding: 10px; }
+  main .ubicacionCarousel {
+    grid-area: c1;
+    height: auto;
+    width: 100%; }
+  main .caja {
+    height: 100%;
+    width: 80%;
+    padding-top: 10px;
+    margin: 0px auto 30px;
+    padding-left: 5%;
+    padding-right: 5%; }
+  main div h1 a {
+    font-size: 3vw;
+    align-content: center;
+    justify-content: center; }
+  main div h1 a:hover {
+    color: #ddcca6;
+    transform: scale(1.05, 1.05); }
+  main p {
+    display: flex;
+    align-items: center;
+    font-size: small;
+    margin-top: 0; } }
